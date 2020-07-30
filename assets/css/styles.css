@@ -1,0 +1,54 @@
+/* CSS FOR THE GAME */
+
+/* Get rid of scroll bar */
+html{
+    overflow-x: hidden!important;
+}
+
+
+.mg-center{
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#game{
+    width: 70vw;
+    height: 39vh;
+    
+}
+
+#character{
+    height:13vh;
+    width: 10vw;
+    background-color: red;
+    position: relative;
+    top: 13vh;
+}
+
+.enemy{
+    height:13vh;
+    width: 10vw;
+    position: relative;
+    left: 60vw;
+    background-color: orange;
+}
+
+.attack{
+    animation: attack 3s linear infinite;
+}
+
+
+
+/* ##### BASIC GAME ##### */
+
+
+
+
+/* ##### KEYFRAMES ARE DECLARED BELOW ##### */
+@keyframes attack {
+    0%{left:60vw;}
+    100%{left:0vw;}
+}

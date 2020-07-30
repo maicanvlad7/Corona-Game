@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyno Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-12 mainCol text-center">
+            <h3>Corona Run : The Game</h3>
+             <!-- GAME CONTAINER -->
+            <div id="game" onclick="moveUp()" class="mg-center mt-5">
+                <div id="character"></div>
+                <div class="enemy"></div>
+            </div>
+             <!-- GAME CONTAINER END -->
+
+            <!-- GAME CONTROLS -->
+            <div class="row mt-5" id="game-controls">
+                <div class="col-md-4 mg-center">
+                   <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn-success" onclick='start()'>START</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn-danger" onclick='stop()'>STOP</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn-info">RESET GAME</button>
+                    </div>
+                    <div class="col-md-5 btn btn-info mt-5" onclick="moveUp()">Move Up</div>
+                    <div class="col-md-5 offset-1 btn btn-info mt-5" onclick="moveDown()">Move Down</div>
+                   </div>
+                </div>
+                <div class="col-md-12 text-center mt-5">
+                    <h2>Highscore : <span id="high">0</span></h2>
+                    <h2>Score: <span id="score">0</span></h2>
+                </div>
+            </div>
+            <!-- GAME CONTROLS END -->
+
+            <!-- WIN SCREEN -->
+            <!-- YOU DIED SCREEN  -->
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/script.js"></script>
+</html>
